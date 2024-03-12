@@ -1,0 +1,87 @@
+@import '../variables';
+
+.group-block {
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+    text-align: center;
+    margin-bottom: 65px;
+    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.308);
+    border-radius: 25px;
+    padding: 10px;
+    transition: 0.2s;
+    margin-right: 35px;
+
+    &__image {
+        align-self: center;
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        display: inline-block;
+        box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.308);
+        margin-bottom: 15px;
+    }
+
+    &__title {
+        font-size: 20px;
+        font-weight: 900;
+        letter-spacing: 1%;
+        margin-bottom: 30px;
+    }
+
+    &__selector {
+        display: flex;
+        background-color: #f3f3f3;
+        border-radius: 10px;
+        flex-direction: column;
+        margin-top: auto;
+        padding: 6px;
+
+        ul {
+            display: flex;
+            flex: 1;
+            margin-bottom: 6px;
+            li {
+                border: none;
+                transition: 0.2s;
+                padding: 8px;
+                flex: 1;
+                font-weight: 600;
+                font-size: 14px;
+                background: #ffffff;
+                box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.04);
+                border-radius: 5px;
+                cursor: default;
+            }
+        }
+    }
+}
+
+.friendsList__block {
+    display: flex;
+    flex-direction: column;
+    margin-top: 15px;
+    width: 100%;
+    height: fit-content;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.04);
+    justify-content: space-between;
+}
+
+.group-block__button {
+    border: none;
+    transition: 0.2s;
+    padding: 8px;
+    flex: 1;
+    font-weight: 600;
+    font-size: 14px;
+    background: #ffffff;
+    box-shadow: 0px 2px 4px rgba(9, 111, 255, 0.04);
+    border-radius: 5px;
+    cursor: pointer;
+
+    &:hover {
+        background: $background;
+    }
+}
